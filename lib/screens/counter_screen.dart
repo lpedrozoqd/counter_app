@@ -34,30 +34,18 @@ class _CounterScreenState extends State<CounterScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             FloatingActionButton(
-              onPressed: () {
-                setState(() {
-                  _counter++;
-                });
-              },
+              onPressed: () => setState(() => _counter++),
               child: const Icon(Icons.exposure_plus_1_outlined),
             ),
             //Es como un widget invisible para separara widgets
             const SizedBox(width: 20),
             FloatingActionButton(
-              onPressed: () {
-                setState(() {
-                  _counter = 0;
-                });
-              },
+              onPressed: () => setState(() => _counter = 0),
               child: const Icon(Icons.exposure_zero_outlined),
             ),
             const SizedBox(width: 20),
             FloatingActionButton(
-              onPressed: () {
-                setState(() {
-                  _counter--;
-                });
-              },
+              onPressed: () => setState(() => _counter--),
               child: const Icon(Icons.exposure_minus_1_outlined),
             ),
           ],
