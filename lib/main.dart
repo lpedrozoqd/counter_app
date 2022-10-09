@@ -1,4 +1,4 @@
-import 'package:counter_app/screens/counter_screen_v1.dart';
+import 'package:counter_app/screens/counter_screen_v2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: CounterScreenV1());
+        debugShowCheckedModeBanner: false, home: CounterScreenV2());
   }
 }
